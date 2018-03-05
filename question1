@@ -1,0 +1,14 @@
+#questão 1
+#return adbecf
+
+a = "abc"
+b = "def"
+
+def mergeStrings(a, b) :
+    m = ""
+    for i in range(len(a)) :
+        m += a[i]
+        m += b[i]
+    print(m)
+    
+mergeStrings(a,b)
