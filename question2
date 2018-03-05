@@ -1,0 +1,27 @@
+#questão 2
+# return 2, número de itens errados
+origItems = ["rice", "sugar", "wheat", "cheese"]
+origPrices = [16.89, 56.92, 20.89, 345.99]
+items = ["rice", "cheese"]
+prices = [18.99, 400.89]
+
+#The prices for rice and cheese do not match the original price
+#list, so we return 2 as the number of incorrectly recorded sale
+#prices.
+
+# par = range(0,len(result), +2)
+
+ 
+def verifyItems(origItems, origPrices, items, prices): 
+    certo = dict(zip(origItems, origPrices))
+    busca = dict(zip(items,prices))
+    conf = 0
+    count = 0
+    for key in certo:
+        for key2 in busca:
+            if key == key2 :
+                if certo[key] != busca[key2] :
+                    conf = conf + 1
+    return conf
+
+verifyItems(origItems, origPrices, items, prices)
