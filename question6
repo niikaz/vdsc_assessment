@@ -1,0 +1,19 @@
+# 6 cupcakes
+
+#Sarah loves going to her favorite bakery, Zillycakes, withn dollars to buy cupcakes. Each cupcake has a flat cost of c dollars, and the store has a promotion where they give you 1 free cupcake for every m cupcake wrappers you trade in."""
+#Complete the maximumCupcakes function in your editor. It has1 parameter: an array of strings named trips. Each string in trips contains the following three space-separated values:
+#1. An integer, n, denoting the amount of money (in dollars) Sarah can spend during that trip to Zillycakes.
+#2. An integer, c, denoting the cost of a cupcake in dollars.
+#3. An integer, m, denoting the number of wrappers that can be traded in for one new cupcake.
+#For each trip to Zillycakes in trips, your function must print an integer denoting the maximum number of cupcakes Sarah can eat on a new line.
+
+#T=3
+# [10, 2, 5] [12, 4, 4] [6, 2, 2]
+#resultados 6, 3, 5
+
+#T=2
+# [8, 4, 2] [7, 2, 3]
+#resultados 3, 4
+
+# Complete the function below.
+def maximumCupcakes(trips):
