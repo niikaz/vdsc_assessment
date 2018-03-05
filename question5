@@ -1,0 +1,12 @@
+#5
+#Sam loves chocolates and starts buying them on the1 day of
+#the year. Each day of the year, x, is numbered from 1 to Y. On
+#days when x is odd, Sam will buyx chocolates; on days when x is
+#even, Sam will not purchase any chocolates.
+
+def calculate(arr):
+   odd = list(range(1, arr+1, +2))
+   choc = 0
+   for i in odd:
+       choc += i
+   return choc
