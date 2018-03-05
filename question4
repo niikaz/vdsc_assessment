@@ -1,0 +1,22 @@
+# 4
+
+#1, 2, 3, 5 and 7 = 0 holes
+#0, 4, 6 and 9 = 1 hole
+#8 = 2 holes
+# Complete the function below.
+zh = [1,2,3,5,7]
+oh = [0,4,6,9]
+th = [8]
+
+def countHoles(num):
+    ns = str(num)
+    count = 0
+    for i in ns :
+        if int(i) in oh:
+            count = count + 1
+        elif int(i) in th:
+            count = count + 2
+    print(count)
+            
+countHoles(891)
+# result = integer with holes sum, given num in function
